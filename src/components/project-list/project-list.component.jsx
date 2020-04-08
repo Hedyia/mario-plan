@@ -1,14 +1,17 @@
 import React from "react";
 import ProjectItem from "../project-item/project-item.component";
-
-const ProjectList = () => {
+import { connect } from "react-redux";
+const ProjectList = ({ projects }) => {
   return (
     <div className="section project-list">
-      <ProjectItem />
-      <ProjectItem />
-      <ProjectItem />
+      {projects.map((project) => (
+        <ProjectItem {...project} />
+      ))}
     </div>
   );
 };
 
-export default ProjectList;
+const mapStateToProps = (state) => ({
+  projects: state.project.projects,
+});
+export default connect(mapStateToProps)(ProjectList);

@@ -5,10 +5,10 @@ const SignOut = () => {
   return (
     <ul className="right">
       <li>
-        <NavLink to="/sign-in">Sign Up</NavLink>
+        <NavLink to="/auth">Sign Up</NavLink>
       </li>
       <li>
-        <NavLink to="/sign-in">Log In</NavLink>
+        <NavLink to="/auth">Sign In</NavLink>
       </li>
     </ul>
   );
