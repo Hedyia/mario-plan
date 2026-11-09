@@ -1,0 +1,4 @@
+*.png
+!tools/mark.png
+__pycache__/
+tools/_tmp_*
