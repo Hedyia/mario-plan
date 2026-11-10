@@ -20,8 +20,10 @@
    "date": "2026-11-10",
    "slot": "story",
    "type": "story_video",
-   "image_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-10-story/01.jpg",
-   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0ef5e2c1673f23677e78ebe8031f79bd84650fae/2026-11-10-story-video/reel.mp4"
+   "image_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-10-story/01.jpg",
+   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-10-story-video/reel.mp4",
+   "status": "published",
+   "note": "نزل 21:07 من غير موسيقى (قبل إضافة الموسيقى)"
   },
   {
    "date": "2026-11-11",
@@ -29,16 +31,16 @@
    "title": "ريل موشن: أنا حاجز من شهر",
    "type": "reel",
    "source": "motion",
-   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-11-reel-hagez-men-shahr/reel.mp4",
-   "cover_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-11-reel-hagez-men-shahr/cover.jpg",
+   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-11-reel-hagez-men-shahr/reel.mp4",
+   "cover_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-11-reel-hagez-men-shahr/cover.jpg",
    "caption": "كل سكرتيرة عاشت الموقف ده مرة على الأقل 😅\nمريض جاي في معاده، والحجز مكتوب في دفتر محدش لاقيه.\n\nفي Aura Clinic CRM كل الحجوزات متسجلة في مكان واحد: تكتب اسم المريض، ويظهرلك معاده على طول.\n\nمنشن السكرتيرة بتاعتك، أو ابعته لدكتور لسه شغال بالدفتر.\nتابعنا عشان كل يوم حاجة تسهّل إدارة عيادتك.\nابعتلنا وهنرد على كل استفساراتك.\n\n#سكرتارية_طبية #عيادات #إدارة_العيادات #دكتور"
   },
   {
    "date": "2026-11-11",
    "slot": "story",
    "type": "story_video",
-   "image_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-11-story/01.jpg",
-   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0ef5e2c1673f23677e78ebe8031f79bd84650fae/2026-11-11-story-video/reel.mp4"
+   "image_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-11-story/01.jpg",
+   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-11-story-video/reel.mp4"
   },
   {
    "date": "2026-11-12",
@@ -46,15 +48,15 @@
    "type": "carousel",
    "title": "7 أسئلة قبل ما تختار سيستم",
    "image_urls": [
-    "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-12-7-asela/01.jpg",
-    "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-12-7-asela/02.jpg",
-    "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-12-7-asela/03.jpg",
-    "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-12-7-asela/04.jpg",
-    "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-12-7-asela/05.jpg",
-    "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-12-7-asela/06.jpg",
-    "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-12-7-asela/07.jpg",
-    "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-12-7-asela/08.jpg",
-    "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-12-7-asela/09.jpg"
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-12-7-asela/01.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-12-7-asela/02.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-12-7-asela/03.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-12-7-asela/04.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-12-7-asela/05.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-12-7-asela/06.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-12-7-asela/07.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-12-7-asela/08.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-12-7-asela/09.jpg"
    ],
    "caption": "قبل ما تختار سيستم لعيادتك، اسأل الأسئلة دي لأي شركة، حتى لو مش إحنا:\n\n1. السيستم بيشتغل من الموبايل ولا من الكمبيوتر بس؟\n2. أقدر أحدد كل موظف يشوف إيه؟\n3. بياناتي متخزنة فين، والنسخة الاحتياطية بتتعمل إمتى؟\n4. أقدر آخد بياناتي معايا لو حبيت أغير السيستم؟\n5. فيه تدريب للسكرتارية والفريق؟\n6. فيه دعم فني لو حصلت مشكلة؟ ومين بيرد؟\n7. السيستم هيكبر معايا لو فتحت فرع تاني؟\n\nاحفظ البوست وارجعله قبل ما تقرر، وابعته لشريكك.\nتابعنا عشان كل يوم حاجة تسهّل إدارة عيادتك.\nابعتلنا وهنرد على كل استفساراتك.\n\n#برنامج_إدارة_العيادات #عيادات #دكتور #مراكز_طبية"
   },
@@ -62,8 +64,8 @@
    "date": "2026-11-12",
    "slot": "story",
    "type": "story_video",
-   "image_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-12-story/01.jpg",
-   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0ef5e2c1673f23677e78ebe8031f79bd84650fae/2026-11-12-story-video/reel.mp4"
+   "image_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-12-story/01.jpg",
+   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-12-story-video/reel.mp4"
   },
   {
    "date": "2026-11-13",
@@ -71,16 +73,16 @@
    "title": "ريل موشن: يوم في عيادة من غير سيستم",
    "type": "reel",
    "source": "motion",
-   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-13-reel-youm-men-gheir-system/reel.mp4",
-   "cover_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-13-reel-youm-men-gheir-system/cover.jpg",
+   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-13-reel-youm-men-gheir-system/reel.mp4",
+   "cover_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-13-reel-youm-men-gheir-system/cover.jpg",
    "caption": "لو حصلك 2 من دول في يوم واحد، يبقى عيادتك محتاجة سيستم مش سكرتيرة زيادة.\n\nالدفتر الضايع، والمواعيد اللي بتتضارب، والملف اللي مش لاقيينه، والخزنة اللي مش مظبوطة. كل دول بيتحلوا لما المواعيد وملفات المرضى والفواتير تبقى في مكان واحد.\n\nأنهي واحدة بتحصل عندك أكتر؟ اكتبها في الكومنتات.\nتابعنا عشان كل يوم حاجة تسهّل إدارة عيادتك.\nابعتلنا وهنرد على كل استفساراتك.\n\n#برنامج_إدارة_العيادات #عيادات #إدارة_العيادات #دكتور"
   },
   {
    "date": "2026-11-13",
    "slot": "story",
    "type": "story_video",
-   "image_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-13-story/01.jpg",
-   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0ef5e2c1673f23677e78ebe8031f79bd84650fae/2026-11-13-story-video/reel.mp4"
+   "image_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-13-story/01.jpg",
+   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-13-story-video/reel.mp4"
   },
   {
    "date": "2026-11-14",
@@ -88,7 +90,7 @@
    "type": "image",
    "title": "الحجز مش هو الإدارة",
    "image_urls": [
-    "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-14-el-hagz-mesh-el-edara/01.jpg"
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-14-el-hagz-mesh-el-edara/01.jpg"
    ],
    "caption": "ناس كتير فاكرة إن تطبيق الحجز كفاية لإدارة العيادة.\nالحجز أول خطوة بس. بعده فيه ملف المريض، والفاتورة، والمخزن، والمصروفات، والتقارير.\n\nAura Clinic CRM نظام بيدير العيادة كلها من مكان واحد، والمزايا بتختلف حسب الباقة.\n\nعيادتك بتدير الحاجات دي إزاي النهارده؟ قولنا في الكومنتات.\nتابعنا عشان كل يوم حاجة تسهّل إدارة عيادتك.\nابعتلنا وهنرد على كل استفساراتك.\n\n#إدارة_العيادات #برنامج_إدارة_العيادات #عيادات #دكتور"
   },
@@ -96,8 +98,8 @@
    "date": "2026-11-14",
    "slot": "story",
    "type": "story_video",
-   "image_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-14-story/01.jpg",
-   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0ef5e2c1673f23677e78ebe8031f79bd84650fae/2026-11-14-story-video/reel.mp4"
+   "image_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-14-story/01.jpg",
+   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-14-story-video/reel.mp4"
   },
   {
    "date": "2026-11-15",
@@ -105,14 +107,14 @@
    "type": "carousel",
    "title": "6 حاجات تقلل غياب المرضى",
    "image_urls": [
-    "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-15-6-hagat-el-ghiab/01.jpg",
-    "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-15-6-hagat-el-ghiab/02.jpg",
-    "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-15-6-hagat-el-ghiab/03.jpg",
-    "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-15-6-hagat-el-ghiab/04.jpg",
-    "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-15-6-hagat-el-ghiab/05.jpg",
-    "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-15-6-hagat-el-ghiab/06.jpg",
-    "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-15-6-hagat-el-ghiab/07.jpg",
-    "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-15-6-hagat-el-ghiab/08.jpg"
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-15-6-hagat-el-ghiab/01.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-15-6-hagat-el-ghiab/02.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-15-6-hagat-el-ghiab/03.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-15-6-hagat-el-ghiab/04.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-15-6-hagat-el-ghiab/05.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-15-6-hagat-el-ghiab/06.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-15-6-hagat-el-ghiab/07.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-15-6-hagat-el-ghiab/08.jpg"
    ],
    "caption": "الغياب مش حظ وحش، ليه أسباب وليه حلول.\nدي 6 حاجات تقدر تبدأ بيها من بكرة:\n\n1. أكّد المعاد قبلها بيوم\n2. فكّر المريض صباح يوم المعاد\n3. اسأله عن الوقت اللي يناسبه\n4. اعمل قائمة انتظار\n5. حط سياسة واضحة للإلغاء\n6. قيس نسبة الغياب كل شهر\n\nاحفظ البوست، وابعته للمسؤول عن الاستقبال عندك.\nتابعنا عشان كل يوم حاجة تسهّل إدارة عيادتك.\nابعتلنا وهنرد على كل استفساراتك.\n\n#إدارة_العيادات #عيادات #سكرتارية_طبية #دكتور"
   },
@@ -120,8 +122,8 @@
    "date": "2026-11-15",
    "slot": "story",
    "type": "story_video",
-   "image_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-15-story/01.jpg",
-   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0ef5e2c1673f23677e78ebe8031f79bd84650fae/2026-11-15-story-video/reel.mp4"
+   "image_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-15-story/01.jpg",
+   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-15-story-video/reel.mp4"
   },
   {
    "date": "2026-11-16",
@@ -136,8 +138,8 @@
     "title": "ريل موشن: تمن الغياب",
     "type": "reel",
     "source": "motion",
-    "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-16-reel-taman-el-ghiab/reel.mp4",
-    "cover_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-16-reel-taman-el-ghiab/cover.jpg",
+    "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-16-reel-taman-el-ghiab/reel.mp4",
+    "cover_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-16-reel-taman-el-ghiab/cover.jpg",
     "caption": "المريض اللي مجاش مش بس معاد فاضي، ده وقت دكتور وسكرتيرة اتدفع تمنه.\n\nاحسبها كده: عدد المرضى اللي بيغيبوا في اليوم × سعر الكشف عندك × أيام الشغل في الشهر.\n\nفي Aura Clinic CRM بتدير المواعيد وتبعت تنبيهات للمرضى قبلها.\n\nعندك كام مريض بيغيب في الأسبوع؟ اكتب الرقم في الكومنتات.\nتابعنا عشان كل يوم حاجة تسهّل إدارة عيادتك.\nابعتلنا وهنرد على كل استفساراتك.\n\n#إدارة_العيادات #عيادات #دكتور #مراكز_طبية"
    }
   },
@@ -145,8 +147,8 @@
    "date": "2026-11-16",
    "slot": "story",
    "type": "story_video",
-   "image_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/2bb223d204c68d5444fa62b95e1b4a482614a84f/2026-11-16-story/01.jpg",
-   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0ef5e2c1673f23677e78ebe8031f79bd84650fae/2026-11-16-story-video/reel.mp4"
+   "image_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-16-story/01.jpg",
+   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-16-story-video/reel.mp4"
   }
  ]
 }
