@@ -3,12 +3,14 @@
 Usage: python3 edit_real.py INPUT_VIDEO OUT_DIR --hook "سطر 1|سطر 2" [--max 45]
 - crops/scales to 1080x1920 (9:16), 30fps, keeps the original sound
 - shows the hook text in a banner for the first 3.5 s and a small logo the whole time
-- appends the 2.8 s Aura end card ("تابع @auracliniccrm")
+- appends the 2.8 s Aura end card ("تابع @auracliniccrm") with music
+- a clip without sound gets original calm music (never silent)
 Outputs OUT_DIR/reel.mp4 and OUT_DIR/cover.jpg
 """
 import argparse, asyncio, json, os, shutil, subprocess, sys, tempfile
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from render import CSS, E, TOOLS  # noqa: E402
+from music import make_track  # noqa: E402
 from playwright.async_api import async_playwright
 
 def ff(*a):
@@ -50,9 +52,11 @@ def main():
     main_v = os.path.join(tmp, "main.mp4")
     vf = ("[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30,setsar=1[v0];"
           "[v0][2:v]overlay=0:0[v1];[v1][1:v]overlay=0:0:enable='lt(t,3.5)'[v]")
-    audio = ["-map", "0:a:0"] if has_audio(a.input) else ["-f", "lavfi", "-t", str(a.max), "-i", "anullsrc=r=48000:cl=stereo", "-map", "3:a"]
-    ff("-i", a.input, "-i", os.path.join(tmp, "hook.png"), "-i", os.path.join(tmp, "logo.png"), *([] if has_audio(a.input) else audio[:6]),
-       "-filter_complex", vf, "-map", "[v]", *(audio if has_audio(a.input) else audio[6:]), "-t", str(a.max),
+    # no sound in the clip -> add original calm music instead of silence
+    music_wav = make_track("calm_piano", a.max, os.path.join(tmp, "music.wav"), 7)
+    audio = ["-map", "0:a:0"] if has_audio(a.input) else ["-i", music_wav, "-map", "3:a", "-af", "loudnorm=I=-16:TP=-1.5"]
+    ff("-i", a.input, "-i", os.path.join(tmp, "hook.png"), "-i", os.path.join(tmp, "logo.png"), *([] if has_audio(a.input) else audio[:2]),
+       "-filter_complex", vf, "-map", "[v]", *(audio if has_audio(a.input) else audio[2:]), "-t", str(a.max),
        "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-c:a", "aac", "-ar", "48000", "-ac", "2", "-b:a", "128k", "-shortest", main_v)
     out = os.path.join(a.out, "reel.mp4")
     ff("-i", main_v, "-i", os.path.join(tmp, "end", "reel.mp4"), "-filter_complex",

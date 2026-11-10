@@ -3,12 +3,17 @@
 Usage: python3 reel.py reels.json OUT_DIR
 reels.json = {"reels":[{"slug":"...","theme":"blue|teal|coral|violet|charcoal|rose","cover_at":2.0,"scenes":[{...}]}]}
 Scene types (each has "dur" seconds): hook | quote | chat | timeline | formula | receipt | punch | endcard
-Outputs OUT_DIR/<slug>/reel.mp4 and OUT_DIR/<slug>/cover.jpg
+Outputs OUT_DIR/<slug>/reel.mp4 (with original background music, loudness-normalised) and OUT_DIR/<slug>/cover.jpg
+Optional per reel: "music": calm_piano | warm_pad | soft_lofi | bright_soft (default chosen from the theme), "music_seed": int
 Safe area: keep text between y=300 and y=1450 (Instagram UI covers the top bar and the caption area).
 """
 import asyncio, json, os, shutil, subprocess, sys, tempfile
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from render import CSS, E, lines, orbs, TOOLS, theme_vars  # noqa: E402
+from music import make_track  # noqa: E402
+
+# Every reel/story gets original calm music (never silent). Override per reel with "music": preset, "music_seed": int.
+THEME_MUSIC = {"blue": "calm_piano", "teal": "warm_pad", "coral": "soft_lofi", "violet": "bright_soft", "charcoal": "warm_pad", "rose": "calm_piano"}
 from playwright.async_api import async_playwright
 
 W, H, FPS = 1080, 1920, 30
@@ -197,12 +202,15 @@ async def main(spec_path, out_dir):
             await pg.evaluate(f"document.getAnimations().forEach(a=>a.currentTime={reel.get('cover_at', 2.0) * 1000})")
             await pg.screenshot(path=os.path.join(d, "cover.jpg"), type="jpeg", quality=92)
             out = os.path.join(d, "reel.mp4")
+            preset = reel.get("music", THEME_MUSIC.get(reel.get("theme", "blue"), "calm_piano"))
+            seed = reel.get("music_seed", sum(map(ord, reel["slug"])) % 1000)
+            wav = make_track(preset, total, os.path.join(frames, "music.wav"), seed)
             subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", os.path.join(frames, "f%05d.jpg"),
-                            "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-shortest",
+                            "-i", wav, "-af", "loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000", "-shortest",
                             "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-profile:v", "high", "-level", "4.1",
                             "-r", str(FPS), "-g", "60", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", out], check=True)
             shutil.rmtree(frames); os.remove(f)
-            print(reel["slug"], reel.get("theme", "blue"), f"{total:.1f}s", n, "frames", os.path.getsize(out) // 1024, "KB")
+            print(reel["slug"], reel.get("theme", "blue"), preset, f"{total:.1f}s", n, "frames", os.path.getsize(out) // 1024, "KB")
         await b.close()
 
 if __name__ == "__main__":
