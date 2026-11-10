@@ -131,7 +131,35 @@ def sc_endcard(s, t0):
   <div {rise(t0+1.3)}><div style="margin-top:60px;display:inline-block;background:#fff;color:var(--ink);font-weight:700;font-size:42px;padding:28px 48px;border-radius:26px">ابعتلنا وهنرد على كل استفساراتك</div></div>
 </div>"""
 
-KINDS = {"hook": sc_hook, "quote": sc_quote, "chat": sc_chat, "timeline": sc_timeline, "formula": sc_formula,
+def sc_storycard(s, t0):
+    """Animated story (one scene, 7-9 s): chip, title, then body or options one by one, then follow button."""
+    k = t0 + 1.4
+    body = ""
+    if s.get("options"):
+        for j, o in enumerate(s["options"]):
+            body += (f'<div {rise(k + .6*j, "pop", .5)}><div style="margin-top:26px;background:rgba(255,255,255,.14);border:2px solid rgba(255,255,255,.32);'
+                     f'border-radius:30px;padding:30px 40px;font-size:48px;font-weight:600;color:#fff">{E(o)}</div></div>')
+        k += .6 * len(s["options"])
+    if s.get("body"):
+        body += f'<div {rise(k)}><div style="margin-top:44px;font-size:48px;line-height:1.65;color:rgba(255,255,255,.92)">{E(s["body"])}</div></div>'
+        k += .6
+    if s.get("ask"):
+        body += f'<div {rise(k)}><div style="margin-top:50px;font-size:42px;line-height:1.6;color:rgba(255,255,255,.9)">{E(s["ask"])}</div></div>'
+        k += .5
+    follow = (f'<div {rise(k + .3, "pop", .5)}><div style="margin-top:70px;display:inline-block;background:#fff;color:var(--ink);font-weight:700;'
+              f'font-size:42px;padding:26px 46px;border-radius:24px">تابع <span class="ltr">@auracliniccrm</span></div></div>') if s.get("follow", True) else ""
+    return True, f"""
+<div {rise(t0, "sin", .4)}><div style="position:absolute;top:270px;right:80px;display:flex;align-items:center;gap:18px">
+  <div style="width:78px;height:78px;border-radius:22px;background:#fff;display:flex;align-items:center;justify-content:center"><img src="mark.png" style="width:62px;height:62px"></div>
+  <div style="font-weight:700;font-size:30px;direction:ltr;color:#fff">Aura Clinic CRM</div></div></div>
+<div style="position:absolute;top:470px;right:80px;left:80px">
+  {chip(s['kicker'], t0 + .2)}
+  <div {rise(t0 + .5)}><div style="margin-top:56px;font-weight:700;font-size:{s.get('size',96)}px;line-height:1.3;color:#fff">{lines(s['title'][:-1])}</div></div>
+  <div {rise(t0 + .9, 'pop', .6)}><div style="font-weight:700;font-size:{s.get('size',96)}px;line-height:1.3" class="hl">{E(s['title'][-1])}</div></div>
+  {body}{follow}
+</div>"""
+
+KINDS = {"storycard": sc_storycard, "hook": sc_hook, "quote": sc_quote, "chat": sc_chat, "timeline": sc_timeline, "formula": sc_formula,
          "receipt": sc_receipt, "punch": sc_punch, "endcard": sc_endcard}
 
 def build(reel):
