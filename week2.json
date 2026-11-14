@@ -1,0 +1,332 @@
+{
+ "posts": [
+  {
+   "slug": "2026-11-17-rateb-el-makhzan",
+   "theme": "teal",
+   "format": "feed",
+   "slides": [
+    {
+     "type": "cover",
+     "kicker": "للمسؤول عن المخزن في العيادة",
+     "title": [
+      "رتب مخزن عيادتك",
+      "في 5 خطوات"
+     ],
+     "title_size": 108,
+     "sub": "تقدر تبدأ بيها النهارده، حتى من غير سيستم."
+    },
+    {
+     "type": "item",
+     "shape": "square",
+     "num": 1,
+     "dot": 1,
+     "dots": 5,
+     "title": "اعمل قائمة بكل صنف",
+     "title_size": 86,
+     "body": "اكتب كل صنف وكميته النهارده. دي نقطة البداية اللي هتقيس عليها بعد كده."
+    },
+    {
+     "type": "item",
+     "shape": "square",
+     "num": 2,
+     "dot": 2,
+     "dots": 5,
+     "title": "حدد أقل كمية لكل صنف",
+     "title_size": 80,
+     "body": "أول ما الصنف يوصلها اطلب على طول، من غير ما تستنى لما يخلص."
+    },
+    {
+     "type": "item",
+     "shape": "square",
+     "num": 3,
+     "dot": 3,
+     "dots": 5,
+     "title": "اصرف الأقرب في الصلاحية الأول",
+     "title_size": 72,
+     "body": "القديم قدام والجديد ورا، عشان مفيش علبة صلاحيتها تخلص في الدرج."
+    },
+    {
+     "type": "item",
+     "shape": "square",
+     "num": 4,
+     "dot": 4,
+     "dots": 5,
+     "title": "جرد ثابت كل أسبوعين",
+     "title_size": 86,
+     "body": "في نفس اليوم ونفس الميعاد، عشان يبقى عادة مش مجهود كل مرة."
+    },
+    {
+     "type": "item",
+     "shape": "square",
+     "num": 5,
+     "dot": 5,
+     "dots": 5,
+     "title": "سجل كل صرف في ساعته",
+     "title_size": 80,
+     "body": "إيه اللي اتصرف، وكام، ولمين. من غير التسجيل ده الجرد عمره ما هيطابق."
+    },
+    {
+     "type": "cta",
+     "title": [
+      "المخزن المترتب",
+      "بيحمي فلوس العيادة"
+     ],
+     "title_size": 86,
+     "body_html": "في <span class=\"ltr\" style=\"font-weight:600;color:#fff\">Aura Clinic CRM</span> بتسجل الأصناف وصلاحيتها، والسيستم ينبهك لما أي صنف يقرب يخلص. المخزن متاح في باقات <span class=\"ltr\">Business</span> و<span class=\"ltr\">Professional</span> و<span class=\"ltr\">Multi&nbsp;Branch</span>.",
+     "footer": "احفظ البوست وابعته للمسؤول عن المخزن"
+    }
+   ]
+  },
+  {
+   "slug": "2026-11-22-a2al-kemya",
+   "theme": "charcoal",
+   "format": "feed",
+   "slides": [
+    {
+     "type": "cover",
+     "kicker": "حسبة بسيطة لكل صنف",
+     "title": [
+      "أقل كمية لكل صنف",
+      "تحسبها إزاي؟"
+     ],
+     "title_size": 100,
+     "sub": "عشان تطلب في الوقت الصح، مش لما الدرج يفضى.",
+     "hl": "last"
+    },
+    {
+     "type": "single",
+     "dark": false,
+     "kicker": "الخطوة 1",
+     "title": [
+      "استهلاكك",
+      "في اليوم كام؟"
+     ],
+     "title_size": 96,
+     "top": 300,
+     "blocks": [
+      {
+       "k": "text",
+       "html": "بتصرف كام وحدة من الصنف ده في يوم الشغل العادي؟ بص على آخر أسبوعين وخد المتوسط.",
+       "size": 46,
+       "mt": 44
+      }
+     ],
+     "footer": "اسحب للخطوة الجاية"
+    },
+    {
+     "type": "single",
+     "dark": false,
+     "kicker": "الخطوة 2",
+     "title": [
+      "التوريد بياخد",
+      "كام يوم؟"
+     ],
+     "title_size": 96,
+     "top": 300,
+     "blocks": [
+      {
+       "k": "text",
+       "html": "من ساعة ما تطلب من المورد، لحد ما الصنف يوصل العيادة ويتحط على الرف.",
+       "size": 46,
+       "mt": 44
+      }
+     ],
+     "footer": "اسحب للخطوة الجاية"
+    },
+    {
+     "type": "single",
+     "dark": false,
+     "kicker": "الخطوة 3",
+     "title": [
+      "زود احتياطي",
+      "صغير"
+     ],
+     "title_size": 96,
+     "top": 300,
+     "blocks": [
+      {
+       "k": "text",
+       "html": "كمية زيادة بسيطة لأيام الزحمة، أو لو المورد اتأخر.",
+       "size": 46,
+       "mt": 44
+      }
+     ],
+     "footer": "اسحب للحسبة"
+    },
+    {
+     "type": "single",
+     "dark": false,
+     "kicker": "الحسبة",
+     "title": [
+      "أقل كمية ="
+     ],
+     "title_size": 96,
+     "top": 300,
+     "blocks": [
+      {
+       "k": "text",
+       "html": "<b style=\"color:var(--ink)\">استهلاك اليوم × أيام التوريد + الاحتياطي</b>",
+       "size": 56,
+       "mt": 30
+      },
+      {
+       "k": "text",
+       "html": "مثال: بتصرف <span class=\"ltr\">4</span> في اليوم، والتوريد بياخد <span class=\"ltr\">3</span> أيام، والاحتياطي <span class=\"ltr\">4</span>.<br>يبقى أقل كمية: <span class=\"ltr\">4 × 3 + 4 = 16</span>",
+       "size": 44,
+       "mt": 50
+      },
+      {
+       "k": "text",
+       "html": "أول ما الصنف يوصل للرقم ده، اطلب.",
+       "size": 48,
+       "mt": 44,
+       "w": 700
+      }
+     ],
+     "footer": "الأرقام دي مثال، احسبها بأرقام عيادتك"
+    },
+    {
+     "type": "cta",
+     "title": [
+      "احسبها مرة واحدة،",
+      "وسيب التنبيه للسيستم"
+     ],
+     "title_size": 80,
+     "body_html": "في <span class=\"ltr\" style=\"font-weight:600;color:#fff\">Aura Clinic CRM</span> بتسجل الأصناف، والسيستم ينبهك لما أي صنف يقرب يخلص. المخزن متاح في باقات <span class=\"ltr\">Business</span> و<span class=\"ltr\">Professional</span> و<span class=\"ltr\">Multi&nbsp;Branch</span>.",
+     "footer": "احفظ البوست وارجعله وإنت بتطلب"
+    }
+   ]
+  },
+  {
+   "slug": "2026-11-17-story",
+   "theme": "blue",
+   "format": "story",
+   "slides": [
+    {
+     "type": "storytip",
+     "kicker": "بوست جديد على الصفحة",
+     "title": [
+      "رتب مخزن عيادتك",
+      "في 5 خطوات"
+     ],
+     "title_size": 88,
+     "body": "خطوات تبدأ بيها النهارده حتى من غير سيستم. ادخل الصفحة واحفظ البوست."
+    }
+   ]
+  },
+  {
+   "slug": "2026-11-18-story",
+   "theme": "charcoal",
+   "format": "story",
+   "slides": [
+    {
+     "type": "storytip",
+     "style": "sticky",
+     "note": "#FEF08A",
+     "kicker": "نصيحة النهارده",
+     "title": [
+      "اصرف الأقدم",
+      "في الصلاحية الأول"
+     ],
+     "title_size": 82,
+     "body": "رتب الرف: القديم قدام والجديد ورا، عشان مفيش علبة تخلص صلاحيتها في الدرج."
+    }
+   ]
+  },
+  {
+   "slug": "2026-11-19-story",
+   "theme": "violet",
+   "format": "story",
+   "slides": [
+    {
+     "type": "story",
+     "kicker": "سؤال النهارده",
+     "title": [
+      "بتجرد المخزن",
+      "كل قد إيه؟"
+     ],
+     "options": [
+      "1. كل أسبوع",
+      "2. كل شهر",
+      "3. لما حاجة تخلص"
+     ],
+     "ask": "رد علينا برقم اختيارك في الرسايل."
+    }
+   ]
+  },
+  {
+   "slug": "2026-11-20-story",
+   "theme": "rose",
+   "format": "story",
+   "slides": [
+    {
+     "type": "storytip",
+     "kicker": "نصيحة النهارده",
+     "title": [
+      "سجل كل صرف",
+      "في ساعته"
+     ],
+     "title_size": 92,
+     "body": "إيه اللي اتصرف، وكام، ولمين. التأجيل لآخر اليوم هو اللي بيخلي الجرد ميطابقش."
+    }
+   ]
+  },
+  {
+   "slug": "2026-11-21-story",
+   "theme": "teal",
+   "format": "story",
+   "slides": [
+    {
+     "type": "story",
+     "kicker": "سؤال النهارده",
+     "title": [
+      "مرضاك بيحجزوا",
+      "معاك إزاي؟"
+     ],
+     "options": [
+      "1. تليفون",
+      "2. واتساب",
+      "3. حجز أونلاين"
+     ],
+     "ask": "رد علينا برقم اختيارك في الرسايل."
+    }
+   ]
+  },
+  {
+   "slug": "2026-11-22-story",
+   "theme": "coral",
+   "format": "story",
+   "slides": [
+    {
+     "type": "storytip",
+     "kicker": "بوست جديد على الصفحة",
+     "title": [
+      "أقل كمية لكل صنف",
+      "تحسبها إزاي؟"
+     ],
+     "title_size": 86,
+     "body": "حسبة بسيطة بتقولك تطلب إمتى، قبل ما الدرج يفضى. ادخل الصفحة واحفظ البوست."
+    }
+   ]
+  },
+  {
+   "slug": "2026-11-23-story",
+   "theme": "blue",
+   "format": "story",
+   "slides": [
+    {
+     "type": "storytip",
+     "style": "sticky",
+     "note": "#BAE6FD",
+     "kicker": "كل يوم حاجة جديدة",
+     "title": [
+      "عندك سؤال",
+      "عن إدارة عيادتك؟"
+     ],
+     "title_size": 80,
+     "body": "ابعتهولنا في الرسايل، وممكن نرد عليه في فيديو جاي."
+    }
+   ]
+  }
+ ]
+}

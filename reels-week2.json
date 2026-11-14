@@ -1,0 +1,257 @@
+{
+ "reels": [
+  {
+   "slug": "2026-11-18-reel-el-dorg-fady",
+   "theme": "coral",
+   "music": "bright_soft",
+   "cover_at": 3.2,
+   "scenes": [
+    {
+     "type": "chat",
+     "dur": 7.2,
+     "kicker": "جوه أوضة الكشف… والمريض على الكرسي",
+     "gap": 1.35,
+     "names": {
+      "d": "الدكتور",
+      "r": "المساعدة"
+     },
+     "msgs": [
+      [
+       "d",
+       "هاتي علبة البنج من الدرج لو سمحتي"
+      ],
+      [
+       "r",
+       "يا دكتور… الدرج فاضي 😶"
+      ],
+      [
+       "d",
+       "فاضي إزاي؟ مش لسه طالبين؟"
+      ],
+      [
+       "r",
+       "اتصرف كله… ومحدش كتب إنه خلص"
+      ]
+     ]
+    },
+    {
+     "type": "kinetic",
+     "dur": 3.4,
+     "bg": "grid",
+     "lines": [
+      "المريض مستني.",
+      "والدرج فاضي.",
+      "ومحدش خد باله."
+     ],
+     "hl": 2,
+     "size": 112,
+     "beat": 0.5
+    },
+    {
+     "type": "punch",
+     "dur": 4.0,
+     "title": [
+      "الموقف ده مبيحصلش",
+      "لما السيستم ينبهك",
+      "قبل ما الصنف يخلص"
+     ],
+     "size": 84,
+     "body_html": "تنبيهات المخزن في <span class=\"ltr\" style=\"font-weight:600;color:#fff\">Aura Clinic CRM</span>، متاحة في باقات <span class=\"ltr\">Business</span> و<span class=\"ltr\">Professional</span> و<span class=\"ltr\">Multi&nbsp;Branch</span>."
+    },
+    {
+     "type": "endcard",
+     "dur": 2.8
+    }
+   ]
+  },
+  {
+   "slug": "2026-11-20-reel-leh-el-khama-btekhlas",
+   "theme": "violet",
+   "music": "calm_piano",
+   "cover_at": 1.6,
+   "scenes": [
+    {
+     "type": "kinetic",
+     "dur": 3.7,
+     "bg": "solid",
+     "kicker": "كل عيادة عاشت ده",
+     "lines": [
+      "ليه الخامة",
+      "بتخلص فجأة",
+      "وإنت فاكرها موجودة؟"
+     ],
+     "hl": 2,
+     "size": 90,
+     "beat": 0.55
+    },
+    {
+     "type": "checklist",
+     "dur": 7.3,
+     "bg": "paper",
+     "kicker": "3 أخطاء بتعملها عيادات كتير:",
+     "mode": "fail",
+     "gap": 1.7,
+     "items": [
+      {
+       "t": "مفيش أقل كمية متحددة",
+       "r": "فبتطلب لما الصنف يخلص، مش قبلها",
+       "e": "📦"
+      },
+      {
+       "t": "الصرف مش بيتسجل",
+       "r": "الدفتر يقول 10… والدرج فيه 2",
+       "e": "📝"
+      },
+      {
+       "t": "الجرد لما حاجة تخلص بس",
+       "r": "يعني بتكتشف المشكلة متأخر",
+       "e": "⏰"
+      }
+     ]
+    },
+    {
+     "type": "kinetic",
+     "dur": 3.4,
+     "lines": [
+      "المشكلة مش في المخزن.",
+      "المشكلة إن محدش",
+      "بينبهك قبلها."
+     ],
+     "hl": 2,
+     "size": 86,
+     "beat": 0.5
+    },
+    {
+     "type": "punch",
+     "dur": 4.0,
+     "title": [
+      "حدد أقل كمية لكل صنف،",
+      "وسيب التنبيه",
+      "على السيستم"
+     ],
+     "size": 84,
+     "body_html": "في <span class=\"ltr\" style=\"font-weight:600;color:#fff\">Aura Clinic CRM</span> بيجيلك تنبيه لما أي صنف يقرب يخلص. المخزن في باقات <span class=\"ltr\">Business</span> وما فوق."
+    },
+    {
+     "type": "endcard",
+     "dur": 2.8
+    }
+   ]
+  },
+  {
+   "slug": "2026-11-21-reel-nafs-el-3eyada",
+   "theme": "blue",
+   "music": "soft_lofi",
+   "cover_at": 5.0,
+   "scenes": [
+    {
+     "type": "kinetic",
+     "dur": 3.2,
+     "bg": "grid",
+     "kicker": "مخزن العيادة",
+     "lines": [
+      "نفس العيادة.",
+      "نفس اليوم."
+     ],
+     "hl": 1,
+     "size": 124,
+     "beat": 0.6
+    },
+    {
+     "type": "split",
+     "dur": 7.8,
+     "title": "الفرق في المخزن",
+     "gap": 1.3,
+     "a": {
+      "label": "بالورق",
+      "items": [
+       "تعرف إن الصنف خلص لما تدور عليه",
+       "الصلاحية بتتكشف بالصدفة",
+       "الدفتر والدرج مش متطابقين"
+      ]
+     },
+     "b": {
+      "label": "بسيستم واحد",
+      "items": [
+       "تنبيه قبل ما الصنف يخلص",
+       "تنبيه قبل ما الصلاحية تخلص",
+       "الرصيد بيتحدث مع كل صرف"
+      ]
+     }
+    },
+    {
+     "type": "punch",
+     "dur": 4.0,
+     "title": [
+      "نفس الشغل،",
+      "بس من غير مفاجآت",
+      "في نص اليوم"
+     ],
+     "size": 88,
+     "body_html": "المخزن والمصروفات في <span class=\"ltr\" style=\"font-weight:600;color:#fff\">Aura Clinic CRM</span>، متاحين في باقات <span class=\"ltr\">Business</span> و<span class=\"ltr\">Professional</span> و<span class=\"ltr\">Multi&nbsp;Branch</span>."
+    },
+    {
+     "type": "endcard",
+     "dur": 2.8
+    }
+   ]
+  },
+  {
+   "slug": "2026-11-23-reel-salahia-fel-dorg",
+   "theme": "rose",
+   "music": "warm_pad",
+   "cover_at": 1.8,
+   "scenes": [
+    {
+     "type": "kinetic",
+     "dur": 2.8,
+     "bg": "paper",
+     "lines": [
+      "لقيت علبة في الدرج",
+      "صلاحيتها خلصت!"
+     ],
+     "hl": 1,
+     "size": 100,
+     "beat": 0.55
+    },
+    {
+     "type": "counter",
+     "dur": 3.8,
+     "bg": "solid",
+     "kicker": "خلصت من كام يوم؟",
+     "to": 60,
+     "unit": "يوم",
+     "body": "ومحدش خد باله غير النهارده."
+    },
+    {
+     "type": "kinetic",
+     "dur": 3.4,
+     "bg": "grid",
+     "lines": [
+      "كل علبة زيها",
+      "فلوس اتدفعت",
+      "ومش هترجع."
+     ],
+     "hl": 2,
+     "size": 112,
+     "beat": 0.5
+    },
+    {
+     "type": "punch",
+     "dur": 4.0,
+     "title": [
+      "سجل الصلاحية مرة واحدة،",
+      "وسيب التنبيه",
+      "على السيستم"
+     ],
+     "size": 80,
+     "body_html": "في <span class=\"ltr\" style=\"font-weight:600;color:#fff\">Aura Clinic CRM</span> بينبهك قبل ما الصلاحية تخلص. المخزن في باقات <span class=\"ltr\">Business</span> وما فوق."
+    },
+    {
+     "type": "endcard",
+     "dur": 2.8
+    }
+   ]
+  }
+ ]
+}
