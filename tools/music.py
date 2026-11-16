@@ -2,7 +2,9 @@
 
 Usage as a module:  make_track(preset, seconds, out_wav, seed=0)
 CLI:                python3 music.py PRESET SECONDS OUT.wav [SEED]
-Presets: calm_piano · warm_pad · soft_lofi · bright_soft
+Presets: calm_piano · warm_pad · soft_lofi · bright_soft · marimba_pop · pluck_guitar · music_box · upbeat_pop · chill_hop
+Every track is unique: the seed (reel.py derives it from the slug) picks the key, the chord progression,
+the tempo and a generated melody, so no two videos share the same music even with the same preset.
 48 kHz stereo WAV, gentle fade in/out, peak-limited. Loudness is normalised later by ffmpeg (loudnorm).
 """
 import math, sys, wave
@@ -24,7 +26,27 @@ PRESETS = {
                        chords=[(50, [57, 61, 62, 66]), (47, [57, 59, 62, 66]), (43, [55, 59, 62, 66]), (45, [57, 61, 64, 66])]),
     "bright_soft": dict(bpm=88, swing=0.0, layers=("arp", "keys", "bass", "pad", "drums_light"),
                        chords=[(43, [55, 59, 62, 67]), (54, [54, 57, 62, 66]), (40, [55, 59, 62, 64]), (48, [55, 59, 60, 64])]),
+    "marimba_pop":  dict(bpm=100, swing=0.0, layers=("marimba", "bass", "drums_light", "melody"), lead="marimba", mode="major"),
+    "pluck_guitar": dict(bpm=84, swing=0.08, layers=("guitar", "bass", "pad", "melody"), lead="arp", mode="major"),
+    "music_box":    dict(bpm=76, swing=0.0, layers=("musicbox", "pad", "melody"), lead="bell", mode="major"),
+    "upbeat_pop":   dict(bpm=108, swing=0.0, layers=("keys", "bass", "drums_pop", "melody", "pad"), lead="arp", mode="major"),
+    "chill_hop":    dict(bpm=86, swing=0.2, layers=("keys", "bass", "drums", "melody"), lead="keys", mode="minor"),
 }
+
+# progression bank (scale degrees, 0-based) used for every preset; the seed picks one
+PROGS = {"major": [(0, 4, 5, 3), (0, 5, 3, 4), (3, 4, 2, 5), (0, 3, 4, 3), (5, 3, 0, 4), (0, 2, 3, 4), (3, 0, 4, 5), (0, 4, 3, 4)],
+         "minor": [(0, 5, 2, 6), (0, 3, 4, 0), (5, 6, 0, 0), (0, 6, 5, 6), (3, 6, 2, 5), (0, 4, 5, 3)]}
+SCALES = {"major": [0, 2, 4, 5, 7, 9, 11], "minor": [0, 2, 3, 5, 7, 8, 10]}
+
+def build_chords(root, mode, prog):
+    sc = SCALES[mode]
+    out = []
+    for d in prog:
+        tones = [root + sc[(d + k) % 7] + 12 * ((d + k) // 7) for k in (0, 2, 4, 6)]
+        bass = 36 + (tones[0] - 36) % 12
+        voic = sorted(55 + (t - 55) % 12 for t in tones)
+        out.append((bass, voic))
+    return out
 
 def env_adsr(n, a, d_tau, rel, sustain_n=None):
     t = np.arange(n) / SR
@@ -55,6 +77,15 @@ def tone(freq, dur, kind, vel=1.0):
         s += .2*np.sin(2*np.pi*2*freq*t)
         a = min(.9, dur/3)
         e = np.minimum(1, t/a) * np.minimum(1, (dur - t)/min(1.0, dur/3))
+    elif kind == "marimba":
+        s = np.sin(2*np.pi*freq*t) + .35*np.sin(2*np.pi*4*freq*t)*np.exp(-t/0.05) + .12*np.sin(2*np.pi*10*freq*t)*np.exp(-t/0.02)
+        e = env_adsr(n, .003, .32, .03)
+    elif kind == "guitar":   # nylon-ish pluck: harmonics with faster decay up high
+        s = sum((1/h) * np.sin(2*np.pi*h*freq*t) * np.exp(-t*(1.2+h*.9)) for h in range(1, 7))
+        e = env_adsr(n, .004, 2.5, .08)
+    elif kind == "musicbox":
+        s = np.sin(2*np.pi*freq*t) + .4*np.sin(2*np.pi*3.01*freq*t)*np.exp(-t/0.25) + .15*np.sin(2*np.pi*5.4*freq*t)*np.exp(-t/0.1)
+        e = env_adsr(n, .002, .9, .2)
     else:
         raise ValueError(kind)
     return (s * e * vel).astype(np.float64)
@@ -74,6 +105,12 @@ def rim(rng, vel=1.0):
     n = int(.12*SR); t = np.arange(n)/SR
     x = sosfilt(butter(2, [1500, 3500], "bandpass", fs=SR, output="sos"), rng.standard_normal(n))
     return x * np.exp(-t/0.04) * vel
+
+def clap(rng, vel=1.0):
+    n = int(.18*SR); t = np.arange(n)/SR
+    x = sosfilt(butter(2, [900, 2600], "bandpass", fs=SR, output="sos"), rng.standard_normal(n))
+    env = np.exp(-t/0.05) + .6*np.exp(-np.maximum(t-.012, 0)/0.03)*(t > .012)
+    return x * env * vel
 
 def add(buf, x, start, gain=1.0, pan=0.0):
     i = int(start * SR)
@@ -116,11 +153,17 @@ def reverb(x, mix=.22, seed=0):
 def make_track(preset, seconds, out_wav, seed=0):
     p = PRESETS[preset]
     rng = np.random.default_rng(seed)
-    beat = 60 / p["bpm"]; bar = 4 * beat
+    mode = p.get("mode", "minor" if preset == "soft_lofi" else "major")
+    root = int(rng.integers(0, 12))
+    chords = build_chords(48 + root, mode, PROGS[mode][int(rng.integers(0, len(PROGS[mode])))])
+    bpm = p["bpm"] * rng.uniform(.92, 1.08)
+    beat = 60 / bpm; bar = 4 * beat
     total = seconds + 2.5
     buf = np.zeros((2, int(total * SR)))
-    chords = p["chords"]
-    shift = int(rng.integers(0, len(chords)))
+    shift = 0
+    # a short seeded motif (8 eighth-note steps, chord-tone indices or rests) repeated with variation
+    motif = [int(rng.integers(-1, 4)) if rng.random() > .3 else -1 for _ in range(8)]
+    lead = p.get("lead", "bell")
     nbars = int(math.ceil(total / bar))
     for b in range(nbars):
         bass, voic = chords[(b + shift) % len(chords)]
@@ -148,8 +191,41 @@ def make_track(preset, seconds, out_wav, seed=0):
                 add(buf, tone(mtof(seq[e % len(seq)]), .9, "arp", rng.uniform(.5, .8)), st, .085, pan=.45 if e % 2 else -.45)
         if "bass" in L:
             add(buf, tone(mtof(bass), bar * .9, "bass"), t0, .16)
-            if preset in ("soft_lofi", "bright_soft"):
+            if preset in ("soft_lofi", "bright_soft", "marimba_pop", "upbeat_pop", "chill_hop"):
                 add(buf, tone(mtof(bass), beat * 1.2, "bass", .7), t0 + 2.5 * beat, .12)
+        if "marimba" in L:
+            for e in range(8):
+                if rng.random() < .25:
+                    continue
+                m = voic[(e * 2 + b) % len(voic)] + (12 if e % 4 == 3 else 0)
+                add(buf, tone(mtof(m), .7, "marimba", rng.uniform(.6, 1)), t0 + e * beat / 2, .09, pan=rng.uniform(-.5, .5))
+        if "guitar" in L:
+            pattern = [0, 2, 1, 3, 2, 1, 3, 2]
+            for e, k in enumerate(pattern):
+                st = t0 + e * beat / 2 + (p["swing"] * beat / 2 if e % 2 else 0)
+                m = bass + 12 if e == 0 else voic[k % len(voic)]
+                add(buf, tone(mtof(m), 1.6, "guitar", rng.uniform(.6, .9)), st, .12, pan=-.3 + .6 * (k / 3))
+        if "musicbox" in L:
+            for e in range(8):
+                if e % 2 and rng.random() < .5:
+                    continue
+                m = voic[int(rng.integers(0, len(voic)))] + 12
+                add(buf, tone(mtof(m), 1.4, "musicbox", rng.uniform(.5, .8)), t0 + e * beat / 2, .07, pan=rng.uniform(-.4, .4))
+        if "melody" in L:
+            var = rng.integers(0, 2)
+            for e, k in enumerate(motif):
+                if k < 0 or (b % 4 == 3 and e > 4):
+                    continue
+                kk = (k + (1 if var and e == 6 else 0)) % len(voic)
+                st = t0 + e * beat / 2 + (p["swing"] * beat / 2 if e % 2 else 0)
+                add(buf, tone(mtof(voic[kk] + 12), .8 if lead != "bell" else 2.0, lead, rng.uniform(.6, .85)), st, .075, pan=.15)
+        if "drums_pop" in L:
+            for q in range(4):
+                add(buf, kick(), t0 + q * beat, .16)
+            for q in (1, 3):
+                add(buf, clap(rng), t0 + q * beat, .06)
+            for e in range(8):
+                add(buf, hat(rng, rng.uniform(.5, 1)), t0 + e * beat / 2 + beat / 4, .035, pan=.3)
         if "drums" in L or "drums_light" in L:
             light = "drums_light" in L
             for q in (0, 2):
