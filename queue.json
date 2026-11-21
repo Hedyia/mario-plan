@@ -271,9 +271,8 @@
    "source": "real",
    "title": "ريل حقيقي: سؤال من دكتور",
    "inbox_prefix": "2026-11-23",
-   "hook": "سؤال جالنا من دكتور|والإجابة في الفيديو ده",
-   "caption": "سؤال جالنا في الرسايل من دكتور، وجاوبناه هنا عشان يمكن يكون في بالك إنت كمان 👆\n\nعندك سؤال عن إدارة عيادتك؟ اكتبه في الكومنتات أو ابعتهولنا، وممكن نرد عليه في فيديو جاي.\nتابعنا عشان كل يوم حاجة تسهّل إدارة عيادتك.\nابعتلنا وهنرد على كل استفساراتك.\n\n#إدارة_العيادات #عيادات #دكتور #برنامج_إدارة_العيادات",
-   "note": "الهوك والكابشن مؤقتين: لازم يطابقوا السؤال المكتوب في ملف السكريبتات (الماك مكانش متاح وقت التجهيز).",
+   "hook": "هو أنا محتاج سيستم|وأنا دكتور لوحدي في عيادة صغيرة؟",
+   "caption": "«هو أنا محتاج سيستم وأنا دكتور لوحدي في عيادة صغيرة؟» سؤال جالنا، وجاوبناه هنا 👆\n\nالعيادة الصغيرة محتاجة تنظيم أكتر، لأن مفيش حد فاضي يقلّب في الدفاتر. وأقل حاجة محتاجها: ملف لكل مريض فيه زياراته والعلاج اللي أخده.\nوده اللي في باقة Doctor في Aura Clinic CRM: ملفات المرضى وبروفايل المريض والإشعارات، ومعمولة لدكتور واحد.\n\nعندك سؤال تاني؟ اكتبه في الكومنتات، وممكن نرد عليه في فيديو جاي.\nتابعنا عشان كل يوم حاجة تسهّل إدارة عيادتك.\nابعتلنا وهنرد على كل استفساراتك.\n\n#إدارة_العيادات #عيادات #دكتور #برنامج_إدارة_العيادات",
    "fallback": {
     "type": "reel",
     "source": "motion",
@@ -289,6 +288,145 @@
    "type": "story_video",
    "image_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/e04e93fa3f6dc7c2de9628676b39c2c13f489ee7/2026-11-23-story/01.jpg",
    "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/30ad5c794f33988822f20b84a67eae28fc83db93/2026-11-23-story-video/reel.mp4"
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "feed",
+   "type": "carousel",
+   "title": "نسبة الدكتور من غير خلاف",
+   "image_urls": [
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-24-nesbet-el-doctor/01.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-24-nesbet-el-doctor/02.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-24-nesbet-el-doctor/03.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-24-nesbet-el-doctor/04.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-24-nesbet-el-doctor/05.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-24-nesbet-el-doctor/06.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-24-nesbet-el-doctor/07.jpg"
+   ],
+   "caption": "خلافات كتير بين المراكز والدكاترة سببها مش الفلوس… سببها اتفاق مش مكتوب.\nدي 5 حاجات اتفقوا عليها من أول يوم:\n\n1. النسبة من الكشف بس، ولا من الخدمات كمان؟\n2. نسبة ثابتة، ولا بتزيد مع الشغل؟\n3. بتتحسب قبل الخصم ولا بعده؟\n4. الخامات بتتخصم قبل النسبة ولا لأ؟\n5. كشف حساب واضح لكل دكتور آخر كل شهر\n\nوفي Aura Clinic CRM المحاسبة والرواتب والتقارير في مكان واحد (متاحة في باقتي Professional وMulti Branch).\n\nالنسبة عندكم بتتحسب إزاي؟ قولنا في الكومنتات.\nاحفظ البوست، وابعته لشريكك أو لدكتور شغال معاك.\nتابعنا عشان كل يوم حاجة تسهّل إدارة عيادتك.\nابعتلنا وهنرد على كل استفساراتك.\n\n#مراكز_طبية #إدارة_العيادات #حسابات_العيادة #دكتور"
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "story",
+   "type": "story_video",
+   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-24-story-video/reel.mp4",
+   "image_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-24-story/01.jpg"
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "feed",
+   "type": "reel",
+   "source": "motion",
+   "title": "ريل موشن: POV آخر الشهر… كسبنا كام؟",
+   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-25-reel-kasabna-kam/reel.mp4",
+   "cover_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-25-reel-kasabna-kam/cover.jpg",
+   "caption": "POV: آخر يوم في الشهر، والدكتور بيسأل: «هو إحنا كسبنا كام؟» 🧮\nالسكرتيرة تقول رقم من الدفتر، والمحاسب يقول رقم من الإيصالات، والخزنة فيها رقم تالت.\n\nلو عندك أكتر من رقم للمكسب، يبقى معندكش رقم 😅\n\nفي Aura Clinic CRM الإيرادات والمصروفات وصافي الربح بيطلعوا في تقرير واحد (التقارير والمحاسبة متاحة في باقتي Professional وMulti Branch).\n\nعندكم مين اللي بيقول الرقم آخر الشهر؟ قولنا في الكومنتات، وابعت الفيديو لشريكك في العيادة.\nتابعنا عشان كل يوم حاجة تسهّل إدارة عيادتك.\nابعتلنا وهنرد على كل استفساراتك.\n\n#إدارة_العيادات #حسابات_العيادة #عيادات #دكتور"
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "story",
+   "type": "story_video",
+   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-25-story-video/reel.mp4",
+   "image_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-25-story/01.jpg"
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "feed",
+   "type": "image",
+   "title": "الفلوس اللي في الدرج مش هي المكسب",
+   "image_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-26-safy-el-rebh/01.jpg",
+   "caption": "الفلوس اللي في الدرج آخر اليوم مش هي مكسب العيادة.\nالمكسب الحقيقي هو اللي بيفضل بعد الإيجار، والمرتبات ونسب الدكاترة، والخامات، وكل مصروف صغير اتصرف خلال الشهر.\n\nفي Aura Clinic CRM بتسجل المصروفات أول بأول (من باقة Business)، والتقارير الكاملة بتطلعلك الإيرادات والمصروفات وصافي الربح في تقرير واحد (في باقتي Professional وMulti Branch).\n\nبتحسب صافي ربح عيادتك كل شهر، ولا بتعرفه بالتقريب؟ قولنا في الكومنتات، وابعت البوست لشريكك.\nتابعنا عشان كل يوم حاجة تسهّل إدارة عيادتك.\nابعتلنا وهنرد على كل استفساراتك.\n\n#حسابات_العيادة #إدارة_العيادات #برنامج_إدارة_العيادات #مراكز_طبية"
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "story",
+   "type": "story_video",
+   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-26-story-video/reel.mp4",
+   "image_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-26-story/01.jpg"
+  },
+  {
+   "date": "2026-11-27",
+   "slot": "feed",
+   "type": "reel",
+   "source": "motion",
+   "title": "ريل موشن: العيادة مليانة شغل… طب الفلوس راحت فين؟ (أقوى هوك)",
+   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-27-reel-el-felous-rahet-fen/reel.mp4",
+   "cover_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-27-reel-el-felous-rahet-fen/cover.jpg",
+   "caption": "العيادة مليانة شغل طول الشهر… طب الفلوس راحت فين؟ 🤔\n\nغالبًا مش سرقة ولا حظ وحش، دي فلوس بتضيع بهدوء:\n1. كشف اتدفع كاش ومتكتبش\n2. خصم لقريب أو صاحب محدش سجّله\n3. خامة اتصرفت في جلسة ومدخلتش الفاتورة\n4. مريض غاب ومحدش فكّره بمعاده\n\nولا واحدة فيهم كبيرة لوحدها، بس كلهم مع بعض كل شهر بيعملوا رقم.\n\nفي Aura Clinic CRM كل فاتورة وكل معاد وكل مصروف متسجل في مكان واحد (الفواتير والمواعيد من باقة Starter، والمصروفات من Business، والتقارير الكاملة في باقتي Professional وMulti Branch).\n\nأنهي واحدة فيهم بتحصل عندك؟ اكتب رقمها في الكومنتات، وابعت الفيديو لدكتور صاحبك.\nتابعنا عشان كل يوم حاجة تسهّل إدارة عيادتك.\nابعتلنا وهنرد على كل استفساراتك.\n\n#إدارة_العيادات #حسابات_العيادة #عيادات #دكتور"
+  },
+  {
+   "date": "2026-11-27",
+   "slot": "story",
+   "type": "story_video",
+   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-27-story-video/reel.mp4",
+   "image_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-27-story/01.jpg"
+  },
+  {
+   "date": "2026-11-28",
+   "slot": "feed",
+   "type": "reel",
+   "source": "motion",
+   "title": "ريل موشن: تليفون الدكتور آخر الشهر",
+   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-28-reel-akher-el-shahr/reel.mp4",
+   "cover_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-28-reel-akher-el-shahr/cover.jpg",
+   "caption": "آخر يوم في الشهر، والدكتور لسه بيقفل الحسابات… وتليفونه مبيبطّلش 📱\n«نسبتي الشهر ده اتحسبت على كام حالة؟»\n«إيصالات الأسبوع التاني مش لاقيها»\n«فاتورة الشاش لسه متدفعتش يا دكتور»\n\nآخر الشهر مش المفروض يبقى تحقيق.\nفي Aura Clinic CRM المحاسبة والرواتب والتقارير في سيستم واحد (متاحة في باقتي Professional وMulti Branch).\n\nمنشن الدكتور اللي بيقفل الحسابات بنفسه كل شهر 😄\nتابعنا عشان كل يوم حاجة تسهّل إدارة عيادتك.\nابعتلنا وهنرد على كل استفساراتك.\n\n#إدارة_العيادات #مراكز_طبية #حسابات_العيادة #دكتور"
+  },
+  {
+   "date": "2026-11-28",
+   "slot": "story",
+   "type": "story_video",
+   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-28-story-video/reel.mp4",
+   "image_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-28-story/01.jpg"
+  },
+  {
+   "date": "2026-11-29",
+   "slot": "feed",
+   "type": "carousel",
+   "title": "6 مصاريف بتتنسي وإنت بتحسب المكسب",
+   "image_urls": [
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-29-masareef-mansya/01.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-29-masareef-mansya/02.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-29-masareef-mansya/03.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-29-masareef-mansya/04.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-29-masareef-mansya/05.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-29-masareef-mansya/06.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-29-masareef-mansya/07.jpg",
+    "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-29-masareef-mansya/08.jpg"
+   ],
+   "caption": "قبل ما تقول العيادة كسبت كام الشهر ده، اتأكد إنك حاسب دول:\n\n1. صيانة الأجهزة\n2. الخامات الصغيرة\n3. الاشتراكات والبرامج\n4. الإيجار، حتى لو المكان ملكك\n5. التسويق والإعلانات\n6. مرتبك إنت كدكتور\n\nفي Aura Clinic CRM بتسجل المصروفات أول بأول (من باقة Business)، والتقارير بتطلعلك صافي الربح (في باقتي Professional وMulti Branch).\n\nكام واحدة فيهم كنت بتحسبها؟ اكتب الرقم في الكومنتات.\nاحفظ البوست وارجعله آخر الشهر، وابعته لشريكك.\nتابعنا عشان كل يوم حاجة تسهّل إدارة عيادتك.\nابعتلنا وهنرد على كل استفساراتك.\n\n#حسابات_العيادة #إدارة_العيادات #عيادات #نصائح_للأطباء"
+  },
+  {
+   "date": "2026-11-29",
+   "slot": "story",
+   "type": "story_video",
+   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-29-story-video/reel.mp4",
+   "image_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-29-story/01.jpg"
+  },
+  {
+   "date": "2026-11-30",
+   "slot": "feed",
+   "type": "reel",
+   "source": "real",
+   "title": "ريل حقيقي: تسجيل شاشة في 15 ثانية",
+   "inbox_prefix": "2026-11-30",
+   "hook": "بتاخد قد إيه تعملها بالدفتر؟|شوفها في Aura في ثواني",
+   "caption": "بتاخد قد إيه عشان تعمل دي بالدفتر؟ 👀\nدي مهمة واحدة في Aura Clinic CRM، من أولها لآخرها، في ثواني.\n\nملفات المرضى موجودة في كل الباقات، والمواعيد والفواتير من باقة Starter وأعلى.\n\nعايز تشوف حاجة معينة في فيديو جاي؟ اكتبها في الكومنتات.\nتابعنا عشان كل يوم حاجة تسهّل إدارة عيادتك.\nابعتلنا وهنرد على كل استفساراتك.\n\n#برنامج_إدارة_العيادات #إدارة_العيادات #عيادات #دكتور",
+   "note": "قالب 2 في ملف السكريبتات (تسجيل شاشة، حساب تجريبي بأسماء وهمية). edit_real.py --fit auto. لو الفكرة اللي اتسجلت فاتورة أو ملف مريض، الكابشن مناسب زي ما هو.",
+   "fallback": {
+    "title": "ريل موشن: تمن الغياب",
+    "type": "reel",
+    "source": "motion",
+    "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/30ad5c794f33988822f20b84a67eae28fc83db93/2026-11-16-reel-taman-el-ghiab/reel.mp4",
+    "cover_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-16-reel-taman-el-ghiab/cover.jpg",
+    "caption": "المريض اللي مجاش مش بس معاد فاضي، ده وقت دكتور وسكرتيرة اتدفع تمنه.\n\nاحسبها كده: عدد المرضى اللي بيغيبوا في اليوم × سعر الكشف عندك × أيام الشغل في الشهر.\n\nفي Aura Clinic CRM بتدير المواعيد وتبعت تنبيهات للمرضى قبلها (المواعيد من باقة Starter وأعلى).\n\nعندك كام مريض بيغيب في الأسبوع؟ اكتب الرقم في الكومنتات.\nتابعنا عشان كل يوم حاجة تسهّل إدارة عيادتك.\nابعتلنا وهنرد على كل استفساراتك.\n\n#إدارة_العيادات #عيادات #دكتور #مراكز_طبية"
+   }
+  },
+  {
+   "date": "2026-11-30",
+   "slot": "story",
+   "type": "story_video",
+   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-30-story-video/reel.mp4",
+   "image_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/5b5be98e6b4c1dd00abe0c481ffc756889a1a5f5/2026-11-30-story/01.jpg"
   }
  ],
  "backlog": [
@@ -300,15 +438,6 @@
    "cover_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/85b75d8a355780164c6de4147f228c9f6d8398cf/backlog-reel-telephone-el-doctor/cover.jpg",
    "caption": "الدكتور جوه مع مريض… وتليفونه مبيبطّلش 📱\n«مريض الساعة 9 كان واخد علاج إيه آخر مرة؟»\n«مريض بيقول إنه دفع المرة اللي فاتت»\n«مش لاقية رقم مدام منى»\n\nكل الأسئلة دي إجابتها موجودة… لو متسجلة صح.\nفي Aura Clinic CRM ملفات المرضى موجودة في كل الباقات، والمواعيد والفواتير من باقة Starter وأعلى.\n\nابعته للسكرتيرة بتاعتك 😄\nتابعنا عشان كل يوم حاجة تسهّل إدارة عيادتك.\nابعتلنا وهنرد على كل استفساراتك.\n\n#إدارة_العيادات #سكرتيرة_عيادة #دكتور #عيادات",
    "note": "جاهز. مناسب لأسبوع ملف المريض أو أي يوم ريل موشن."
-  },
-  {
-   "title": "ريل موشن: تمن الغياب",
-   "type": "reel",
-   "source": "motion",
-   "video_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/30ad5c794f33988822f20b84a67eae28fc83db93/2026-11-16-reel-taman-el-ghiab/reel.mp4",
-   "cover_url": "https://raw.githubusercontent.com/Hedyia/mario-plan/0a4188916e689b13ccb9fba120463481dace1bbf/2026-11-16-reel-taman-el-ghiab/cover.jpg",
-   "caption": "المريض اللي مجاش مش بس معاد فاضي، ده وقت دكتور وسكرتيرة اتدفع تمنه.\n\nاحسبها كده: عدد المرضى اللي بيغيبوا في اليوم × سعر الكشف عندك × أيام الشغل في الشهر.\n\nفي Aura Clinic CRM بتدير المواعيد وتبعت تنبيهات للمرضى قبلها.\n\nعندك كام مريض بيغيب في الأسبوع؟ اكتب الرقم في الكومنتات.\nتابعنا عشان كل يوم حاجة تسهّل إدارة عيادتك.\nابعتلنا وهنرد على كل استفساراتك.\n\n#إدارة_العيادات #عيادات #دكتور #مراكز_طبية",
-   "note": "اتشال من بديل الاتنين 16 نوفمبر عشان بوست الأحد عن الغياب برضه. ينفع بعد أسبوعين."
   }
  ]
 }
