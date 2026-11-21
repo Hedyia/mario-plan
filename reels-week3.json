@@ -1,0 +1,274 @@
+{
+ "reels": [
+  {
+   "slug": "2026-11-25-reel-kasabna-kam",
+   "theme": "coral",
+   "music": "marimba_pop",
+   "cover_at": 1.8,
+   "scenes": [
+    {
+     "type": "pov",
+     "dur": 3.4,
+     "bg": "paper",
+     "title": [
+      "آخر يوم في الشهر",
+      "والدكتور بيسأل: كسبنا كام؟"
+     ],
+     "emoji": "🧮",
+     "size": 80
+    },
+    {
+     "type": "checklist",
+     "dur": 7.3,
+     "bg": "grid",
+     "kicker": "3 ردود… و3 أرقام:",
+     "mode": "fail",
+     "gap": 1.7,
+     "items": [
+      {
+       "t": "السكرتيرة: من الدفتر",
+       "r": "رقم… ناقصه الكشوفات الكاش",
+       "e": "📒"
+      },
+      {
+       "t": "المحاسب: من الإيصالات",
+       "r": "رقم تاني خالص",
+       "e": "🧾"
+      },
+      {
+       "t": "الخزنة: اللي فيها",
+       "r": "رقم تالت… ومحدش عارف ليه",
+       "e": "💸"
+      }
+     ]
+    },
+    {
+     "type": "kinetic",
+     "dur": 3.4,
+     "bg": "solid",
+     "lines": [
+      "3 أرقام للمكسب",
+      "يعني معندكش",
+      "رقم."
+     ],
+     "hl": 2,
+     "size": 112,
+     "beat": 0.5
+    },
+    {
+     "type": "punch",
+     "dur": 4.0,
+     "title": [
+      "الإيرادات والمصروفات",
+      "وصافي الربح",
+      "في تقرير واحد"
+     ],
+     "size": 86,
+     "body_html": "التقارير والمحاسبة في <span class=\"ltr\" style=\"font-weight:600;color:#fff;white-space:nowrap\">Aura Clinic CRM</span>، متاحة في باقتي <span class=\"ltr\">Professional</span> و<span class=\"ltr\">Multi&nbsp;Branch</span>."
+    },
+    {
+     "type": "endcard",
+     "dur": 2.8
+    }
+   ]
+  },
+  {
+   "slug": "2026-11-27-reel-el-felous-rahet-fen",
+   "theme": "charcoal",
+   "music": "upbeat_pop",
+   "cover_at": 1.6,
+   "scenes": [
+    {
+     "type": "hook",
+     "dur": 3.0,
+     "kicker": "لو حصلك 2 من دول في شهر واحد",
+     "title": [
+      "العيادة مليانة شغل…",
+      "طب الفلوس",
+      "راحت فين؟"
+     ],
+     "size": 104
+    },
+    {
+     "type": "kinetic",
+     "dur": 3.3,
+     "bg": "grid",
+     "lines": [
+      "مش سرقة.",
+      "ولا حظ وحش.",
+      "دي فلوس بتضيع",
+      "بهدوء."
+     ],
+     "hl": 3,
+     "size": 96,
+     "beat": 0.5
+    },
+    {
+     "type": "timeline",
+     "dur": 3.2,
+     "badge": "11:00",
+     "title": "كشف اتدفع كاش",
+     "body": "ومتكتبش في الدفتر عشان الاستقبال كان زحمة."
+    },
+    {
+     "type": "chat",
+     "dur": 5.4,
+     "kicker": "على الواتساب، آخر النهار",
+     "gap": 1.35,
+     "names": {
+      "d": "الدكتور",
+      "r": "الاستقبال"
+     },
+     "msgs": [
+      [
+       "r",
+       "الخزنة مش مظبوطة النهارده يا دكتور"
+      ],
+      [
+       "d",
+       "ناقصة ليه؟"
+      ],
+      [
+       "r",
+       "فيه خصم لقريب حضرتك… ومكتبتهوش 😬"
+      ]
+     ]
+    },
+    {
+     "type": "timeline",
+     "dur": 3.2,
+     "badge": "4:00",
+     "title": "خامة اتصرفت ومتحسبتش",
+     "size": 86,
+     "body": "اتستخدمت في الجلسة، ومدخلتش الفاتورة."
+    },
+    {
+     "type": "timeline",
+     "dur": 3.2,
+     "badge": "8:00",
+     "title": "مريض غاب ومحدش فكّره",
+     "size": 78,
+     "body": "والمعاد فضي، والساعة دي اتدفع تمنها."
+    },
+    {
+     "type": "receipt",
+     "dur": 6.0,
+     "gap": 0.8,
+     "title": [
+      "فاتورة الشهر",
+      "اللي محدش بيشوفها"
+     ],
+     "size": 84,
+     "receipt_title": "اللي ضاع الشهر ده",
+     "rows": [
+      [
+       "كشوفات كاش متسجلتش",
+       "؟"
+      ],
+      [
+       "خصومات محدش يعرف عنها",
+       "؟"
+      ],
+      [
+       "خامات اتصرفت ومتحسبتش",
+       "؟"
+      ],
+      [
+       "مواعيد فضيت من غير تذكير",
+       "؟"
+      ]
+     ],
+     "total": [
+      "الإجمالي",
+      "احسبها"
+     ]
+    },
+    {
+     "type": "punch",
+     "dur": 4.0,
+     "title": [
+      "كل فاتورة، وكل صرف،",
+      "وكل معاد",
+      "متسجل في مكان واحد"
+     ],
+     "size": 82,
+     "body_html": "في <span class=\"ltr\" style=\"font-weight:600;color:#fff;white-space:nowrap\">Aura Clinic CRM</span>: الفواتير والمواعيد من باقة <span class=\"ltr\">Starter</span>، والمصروفات من <span class=\"ltr\">Business</span>، والتقارير في باقتي <span class=\"ltr\">Professional</span> و<span class=\"ltr\">Multi&nbsp;Branch</span>."
+    },
+    {
+     "type": "endcard",
+     "dur": 3.2
+    }
+   ]
+  },
+  {
+   "slug": "2026-11-28-reel-akher-el-shahr",
+   "theme": "violet",
+   "music": "calm_piano",
+   "cover_at": 3.0,
+   "scenes": [
+    {
+     "type": "phone",
+     "dur": 6.8,
+     "bg": "solid",
+     "kicker": "آخر يوم في الشهر، 10 بالليل",
+     "title": [
+      "الدكتور لسه بيقفل الحسابات",
+      "وتليفونه مبيبطّلش:"
+     ],
+     "size": 70,
+     "clock": "10:02",
+     "date": "الاتنين",
+     "gap": 1.2,
+     "notifs": [
+      {
+       "e": "💬",
+       "app": "د. كريم",
+       "t": "نسبتي الشهر ده اتحسبت على كام حالة؟",
+       "w": "9:48 م"
+      },
+      {
+       "e": "💬",
+       "app": "المحاسب",
+       "t": "إيصالات الأسبوع التاني مش لاقيها",
+       "w": "9:55 م"
+      },
+      {
+       "e": "💬",
+       "app": "المورد",
+       "t": "فاتورة الشاش لسه متدفعتش يا دكتور",
+       "w": "10:01 م"
+      }
+     ]
+    },
+    {
+     "type": "kinetic",
+     "dur": 3.4,
+     "bg": "paper",
+     "lines": [
+      "آخر الشهر",
+      "مش المفروض",
+      "يبقى تحقيق."
+     ],
+     "hl": 2,
+     "size": 112,
+     "beat": 0.5
+    },
+    {
+     "type": "punch",
+     "dur": 4.0,
+     "title": [
+      "الحسابات والرواتب",
+      "والتقارير",
+      "في سيستم واحد"
+     ],
+     "size": 88,
+     "body_html": "المحاسبة والرواتب والتقارير في <span class=\"ltr\" style=\"font-weight:600;color:#fff;white-space:nowrap\">Aura Clinic CRM</span>، متاحة في باقتي <span class=\"ltr\">Professional</span> و<span class=\"ltr\">Multi&nbsp;Branch</span>."
+    },
+    {
+     "type": "endcard",
+     "dur": 2.8
+    }
+   ]
+  }
+ ]
+}
